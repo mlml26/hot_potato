@@ -15,7 +15,7 @@ public:
   }
   void print_Trace() {
     if(num_path > 0){
-      cout<<"Trace of potato" << endl;
+      cout<<"Trace of potato:" << endl;
       for(int i = 0; i < num_path; ++i) {
 	if(i!= num_path - 1) cout<< trace[i]<< ",";
 	else cout<< trace[i]<< endl;
