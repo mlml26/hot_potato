@@ -98,7 +98,7 @@ if(num_hops != 0) {//if hops=0, don't send the potato
   select(nfds, &readfds, NULL, NULL, NULL);
   for(int i = 0; i < num_players; ++i){//player_fd: player_fds) {
     if(FD_ISSET(player_fds[i], &readfds)) {
-      cout << "Recieve back player: " << i << endl;
+     // cout << "Recieve back player: " << i << endl;
       recv(player_fds[i], &p, sizeof(p), MSG_WAITALL);
       break;
     }
